@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-    <h1>Fresh Vuejs application</h1>
+    <h1>Hey There</h1>
   </div>
 </template>
 
 <script>
+// import CompanyProfile from "./components/Company.vue";
 export default {
   name: "App",
-  components: {},
 };
 </script>
 
