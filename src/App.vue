@@ -12,6 +12,12 @@
     <input type="text" v-model="input" placeholder="Name here....." />
     <button v-on:click="getInput('Subho')">Get Name</button>
     <div>{{ profession }} from Global Mixin</div>
+    <br />
+    <button @click="faultyFunction">Run the faulty function</button>
+    <p>
+      This triggers the faulty function the reason for which is provided inside
+      company.js
+    </p>
   </div>
 </template>
 
