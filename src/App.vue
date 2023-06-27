@@ -9,6 +9,8 @@
       <!-- ALways remember to :key="index" when iterating an element -->
     </ul>
     <button v-on:click="conflicting">check conflicting</button>
+    <input type="text" v-model="input" placeholder="Name here....." />
+    <button v-on:click="getInput('Subho')">Get Name</button>
     <div>{{ profession }} from Global Mixin</div>
   </div>
 </template>

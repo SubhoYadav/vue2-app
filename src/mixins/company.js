@@ -5,6 +5,7 @@ export const companyMixin = {
       company: "Apple.Inc",
       copyright: "An outcome of Jobs' madness",
       names: [],
+      input: "",
     };
   },
   mounted() {
@@ -15,6 +16,9 @@ export const companyMixin = {
   methods: {
     greetings() {
       console.log("Hi there!");
+    },
+    getInput(want) {
+      this.input = this.names.find((name) => name == want);
     },
     async getNames() {
       const names = await axios.get("http://localhost:8089/names");
