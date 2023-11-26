@@ -1,13 +1,16 @@
 <template>
   <div id="app">
-    <h1>Fresh Vuejs application</h1>
+    <Timer />
   </div>
 </template>
 
 <script>
+import Timer from "./components/Timer.vue"
 export default {
   name: "App",
-  components: {},
+  components: {
+    Timer
+  },
 };
 </script>
 
